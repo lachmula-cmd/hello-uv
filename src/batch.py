@@ -1,6 +1,7 @@
 import numpy as np
 
  # functions for dot products
+ # for git diff
 def flatten_images(images):
     flatten = images.reshape(len(images), -1).astype(float)
     return flatten
