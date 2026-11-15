@@ -22,6 +22,7 @@ run `uv sync` to download necessary dependencies
 
 ## results
 | lr | Final loss |
+| -------- | ------- |
 | 0.01 | 0.00056|
 | 0.1 | 8.625e-08|
 |0.19| 1.6e+19|
