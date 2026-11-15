@@ -21,11 +21,19 @@ run `uv sync` to download necessary dependencies
 - ```descend(w,b,x,y,lr,steps)``` calculates the losses of the steps
 
 ## results
+<<<<<<< HEAD
 |lr|Final loss| 
 | -------- | ------- |
 |0.01|0.00056|
 | 0.1 | 8.625e-08| 
 |0.19| 1.6e+19| 
+=======
+| lr | Final loss |
+| -------- | ------- |
+| 0.01 | 0.00056|
+| 0.1 | 8.625e-08|
+|0.19| 1.6e+19|
+>>>>>>> e5d60d547843388d76cfd06743f939e445ba5567
 
 ![loss curve](losses_curve.png)
 
