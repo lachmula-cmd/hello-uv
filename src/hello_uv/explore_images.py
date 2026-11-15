@@ -1,6 +1,6 @@
-from m0 import load_labels
-from m0 import load_images
-import arrays
+from hello_uv.m0 import load_labels
+from hello_uv.m0 import load_images
+import hello_uv.arrays as arrays
 from pathlib import Path
 import matplotlib.pyplot as plt
 

@@ -1,5 +1,5 @@
 from pathlib import Path
-import core1
+import hello_uv.core1 as core1
 import json
 def read_numbers(path):
     lis = []

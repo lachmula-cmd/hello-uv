@@ -1,5 +1,5 @@
 import numpy as np
-import arrays
+import hello_uv.arrays as arrays
 
 results = []
 

@@ -2,7 +2,7 @@ import json
 import tempfile
 from pathlib import Path
 
-import core2
+import hello_uv.core2 as core2
 
 results = []
 

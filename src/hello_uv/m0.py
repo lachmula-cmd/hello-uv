@@ -17,12 +17,13 @@ def load_images(path):
         data = np.frombuffer(f.read(), dtype=np.uint8, offset=16)
         
         return data.reshape(len(labels),28,28)
-
-    images = load_images(Path("data") / "train-images-idx3-ubyte.gz" )
+    
+images = load_images(Path("data") / "train-images-idx3-ubyte.gz" )
+    
 if __name__ == "__main__":
     
     print(labels.shape, labels[4], CLASSES[labels[4]])
-
+    
     print(CLASSES[labels[4]])
     print(images.shape)
 

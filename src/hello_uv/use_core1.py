@@ -1,5 +1,5 @@
-import core1
-from core1 import mean
+import hello_uv.core1 as core1
+from hello_uv.core1 import mean
 import math as m
 
 

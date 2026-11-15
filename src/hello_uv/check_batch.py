@@ -1,5 +1,5 @@
 import numpy as np
-import batch
+import hello_uv.batch as batch
 
 results = []
 

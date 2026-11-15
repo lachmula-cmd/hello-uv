@@ -1,5 +1,5 @@
 import math
-import core1
+import hello_uv.core1 as core1
 
 results = []
 

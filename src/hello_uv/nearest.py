@@ -1,7 +1,7 @@
-import batch
-import m0
+import hello_uv.batch as batch
+import hello_uv.m0 as m0
 from pathlib import Path 
-from arrays import cosine
+from hello_uv.arrays import cosine
 
 images = m0.load_images(Path("data") / "train-images-idx3-ubyte.gz")
 labels = m0.load_labels(Path("data") / "train-labels-idx1-ubyte.gz")
