@@ -21,7 +21,10 @@ run `uv sync` to download necessary dependencies
 -```descend(w,b,x,y,lr,steps)``` calculates the losses of the steps
 
 ## results
-## what I'm unsure about
-- what imagetools.py's function do
-- what is a numeric gradient/central difference
-- there are multiple gaps in my knowledge :)
+| lr | Final loss |
+| 0.01 | 0.00056|
+| 0.1 | 8.625e-08|
+|0.19| 1.6e+19|
+
+![loss curve](losses_curve.png)
+
