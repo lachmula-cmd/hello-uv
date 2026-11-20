@@ -34,6 +34,22 @@ run `uv sync` to download necessary dependencies
 
 
 
+## 6. fashion.py: Dataset and Dataloader
+
+- ```class ArrayDataset(Dataset):``` class inherits from Dataset
+
+- ```self.x = torch.tensor(x, dtype=torch.float32 self.y = torch.tensor(y, dtype=torch.int64)``` changing x and y into a tensor where x is a float type 32 and y is an int because the labels are whole numbers
+
+- ``` def __len__(self): return self.x.shape[0]``` gets the length of x, if x is (10,2), the length is 10
+
+- ``` def __getitem__(self,i): return self.x[i], self.y[i]``` for any index given return the value of the given index from  x and y
+
+- ``` def get_fashion(train=True, root="data"): return datasets.FashionMNIST(root=root, train=train, download=True, transform=transforms.ToTensor())``` downloads dataset to root, and returns the dataset with train images (60000), finally transforms the images into tensors
+
+- ```def make_loader(dataset, batch_size, shuffle): return DataLoader(dataset=dataset, batch_size=batch_size, shuffle=shuffle)``` sets batchsize and shuffles dataset
+
+- ```def class_counts(loader) ``` loops over the batch and counts the each label with ```torch.bicount()```
+
 
 ## results
 |lr|Final loss| 
